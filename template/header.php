@@ -1,5 +1,9 @@
 <?php
 include "koneksi/connect.php";
+session_start();
+if (!isset($_SESSION['username'])) {
+  header("Location: login.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,8 +17,8 @@ include "koneksi/connect.php";
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
   <!-- CSS Libraries -->
-  <!-- <link rel="stylesheet" href="node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css"> -->
-  <!-- <link rel="stylesheet" href="node_modules/datatables.net-select-bs4/css/select.bootstrap4.min.css"> -->
+  <link rel="stylesheet" href="node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="node_modules/datatables.net-select-bs4/css/select.bootstrap4.min.css">
 
 
   <!-- Template CSS -->
@@ -38,10 +42,16 @@ include "koneksi/connect.php";
             <img alt="image" src="assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
             <div class="d-sm-none d-lg-inline-block">Admin</div></a>
             <div class="dropdown-menu dropdown-menu-right">
-              <a href="#" class="dropdown-item has-icon text-danger">
+              <a href="action_logout.php" class="dropdown-item has-icon text-danger">
                 <i class="fas fa-sign-out-alt"></i> Logout
               </a>
             </div>
           </li>
         </ul>
       </nav>
+      <script src="assets/js/jquery-3.3.1.min.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/jquery.nicescroll.min.js"></script>
+      <script src="assets/js/moment.min.js"></script>
+      <script src="assets/js/stisla.js"></script>

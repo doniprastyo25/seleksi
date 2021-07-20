@@ -9,17 +9,18 @@
             <ul class="sidebar-menu">
               <li class="menu-header">Dashboard</li>
               <li class=""><a class="nav-link" href="index.php"><i class="far fa-square"></i> <span>Dashboard</span></a></li>              
-              <li class="nav-item dropdown">
+              <!-- <li class="nav-item dropdown">
                 <a href="#" class="nav-link has-dropdown"><i class="far fa-square"></i><span>Data Siswa</span></a>
                 <ul class="dropdown-menu">
                   <li><a class="nav-link" href="data_siswa.php">Data Siswa Keseluruhan</a></li>
-                  <li><a class="nav-link" href="">Data Siswa Ternilai</a></li>
+                  <li><a class="nav-link" href="data_terkriteria.php">Data Terkriteria</a></li>
                 </ul>
-              </li>
+              </li> -->
               <!-- <li class=""><a class="nav-link" href="<?php echo ('Data_siswa')?>"><i class="far fa-square"></i> <span>Data Siswa</span></a></li>            -->
-              <li class=""><a class="nav-link" href=""><i class="far fa-square"></i> <span>Data Kriteria</span></a></li>           
+              <li class=""><a class="nav-link" href="data_siswa.php"><i class="far fa-square"></i> <span>Data Siswa Keseluruhan</span></a></li>           
               <li class="menu-header">Penghitungan</li>
               <li class=""><a class="nav-link" href="perhitungan.php"><i class="far fa-square"></i> <span>Data Penghitungan</span></a></li>           
+              <li class=""><a class="nav-link" href="data_penerima.php"><i class="far fa-square"></i> <span>Data Penerima</span></a></li>           
             </ul>
         </aside>
       </div>

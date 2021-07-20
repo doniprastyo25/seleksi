@@ -15,7 +15,7 @@
             </div>
             <div class="card-body">
               <div class="table-responsive">
-                <table class="table table-bordered table-md">
+                <table class="table table-striped" id="table-1">
                   <thead>
                     <tr>
                       <th>No.</th>
@@ -44,9 +44,9 @@
                         <?php
                         print("
                           <td>
-                          <a href='#' class='btn btn-warning'>Info</a>
+                          <a href='edit_data.php?idk=$row[id_siswa]' class='btn btn-warning'>Edit</a>
                           <a href='hapus_data.php?idk=$row[id_siswa]' class='btn btn-danger'>hapus</a>
-                          <a href='input_kriteria_siswa.php?idk=$row[id_siswa]' class='btn btn-info'>Masukkan kriteria</a>
+                          <a href='input_kriteria_siswa.php?idk=$row[id_siswa]' class='btn btn-info'>input kriteria</a>
                           </td>
                         ")
                         ?>
