@@ -43,10 +43,10 @@
                           <td><?php echo $row['Nama_Wali']?></td>
                         <?php
                         print("
-                          <td>
-                          <a href='edit_data.php?idk=$row[id_siswa]' class='btn btn-warning'>Edit</a>
-                          <a href='hapus_data.php?idk=$row[id_siswa]' class='btn btn-danger'>hapus</a>
-                          <a href='input_kriteria_siswa.php?idk=$row[id_siswa]' class='btn btn-info'>input kriteria</a>
+                          <td class='row'>
+                            <a href='edit_data.php?idk=$row[id_siswa]' class='btn btn-warning'>Edit</a>
+                            <a href='hapus_data.php?idk=$row[id_siswa]' class='btn btn-danger'>hapus</a>
+                            <a href='input_kriteria_siswa.php?idk=$row[id_siswa]' class='btn btn-info'>input kriteria</a>
                           </td>
                         ")
                         ?>

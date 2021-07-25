@@ -33,7 +33,7 @@
                   </div>
                   <div class="form-group">
                     <label>Tanggal lahir</label>
-                    <input type="date" name="Tanggal_Lahir" value="<?php echo $d['Tanggal_lahir'];?>" class="form-control">
+                    <input type="text" name="Tanggal_Lahir" value="<?php echo $d['Tanggal_lahir'];?>" class="form-control">
                   </div>
                   <div class="form-group">
                     <label>Jenis Kelamin</label>

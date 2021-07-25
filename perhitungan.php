@@ -358,7 +358,7 @@
                   echo "<table class='table table-striped table-bordered table-hover text-center' >";
                   echo "<thead><tr><th>No.</th><th>Alternatif</th><th>Hasil Akhir</th></tr></thead>";
                   echo "<tbody>";
-                  for($i=0;$i<$a;$i++){
+                  for($i=0;$i<10;$i++){
                       echo "<tr><td>".($i+1).".</td><td>".ucwords(($hsl[$i][0]))."</td><td>".$hsl[$i][1]."</td></tr>";
                   }
                   echo "</tbody></table><hr>";
